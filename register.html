@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="css/register.css"> <!-- Optional CSS for styling -->
+</head>
+<body>
+    <img src="img/home.png" alt="home" id="home">
+
+    <div class="register">
+        <h1>Đăng ký</h1>
+        <form id="registerForm">
+            <label for="username">Tên:</label>
+            <input type="text" id="username" required>
+            <br>
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" required>
+            <br>
+            <label for="confirmPassword">Xác nhận mật khẩu:</label>
+            <input type="password" id="confirmPassword" required>
+            <br>
+            <script src="https://hcaptcha.com/1/api.js" async defer></script>
+            <div class="h-captcha" data-sitekey="587d954d-1053-4654-bc97-7cd11aa2d783" id="captcha"></div>
+            <br>
+            <button type="submit" class="submit">Đăng kí</button>
+        </form>
+        <div id="message"></div>
+        <p>Đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+    </div>
+    <script src="js/register.js"></script>
+</body>
+</html>
